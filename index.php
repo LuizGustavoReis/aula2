@@ -38,7 +38,7 @@ $contadora ++;
 }while($contadora < 10);
 //echo "<BR><BR>degub:".$resultado."<BR><BR><br>";
 
-echo "while:<br>";
+/*echo "while:<br>";
 while($contadora < 150)
 {
     if($contadora % 2 == 0){
@@ -49,14 +49,22 @@ while($contadora < 150)
     }
     $contadora++;
 }
-
+*/
+/*
 CONST teste = "oi";
 for($i = 0; $i<1550; $i++)
 {
     echo "<h1>".$i."<br>";
 }
+*/
 //echo "<script>window.location.href = 'http//www.globo.com</script>'"
-
-
+echo "<table border='5' style='padding:5px'>";
+for($i=0; $i< 25; $i++){
+    echo "<tr>";
+    echo "<td>nome ".$i."</td>";
+    echo "<td>idade ".$i."</td>";
+    echo "</tr>";
+}
+echo "</table>"
 
 ?>
