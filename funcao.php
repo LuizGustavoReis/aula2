@@ -31,6 +31,14 @@ function somaArry($array){
     }
     return $retorno;
 }
+
+function media($num1,$num2){
+    $resultado = ($num1 + $num2) /2 ;
+    return $resultado;
+}
+
+
+
 function lendariacalculadora($numero1,$numero2,$operacao){
     echo "<br>";
     if($operacao == "+"){
@@ -47,6 +55,11 @@ function lendariacalculadora($numero1,$numero2,$operacao){
     
     else if ($operacao == "/"){
         echo divisao($numero1,$numero2);
+        
+    }
+
+    else if ($operacao == "m"){
+        echo media($numero1,$numero2);
         
     }
     
@@ -68,7 +81,7 @@ echo somaArry($numeros);*/
 lendariacalculadora(8,6,"*");
 lendariacalculadora(8,6,"/");
 lendariacalculadora(8,6,"+");
-lendariacalculadora(8,6,"-");
+lendariacalculadora(8,6,"m");
 //lendariacalculadora(8,6,"ljvfafjpafjapjf");
 
 
