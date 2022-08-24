@@ -2,7 +2,7 @@
 
 
 
-echo "Meu nome e jonny"; //a função echo escreve qualquer texto na tela (ja e nativa)
+/*echo "Meu nome e jonny"; //a função echo escreve qualquer texto na tela (ja e nativa)
 echo "<h1> função nativa echo</h1>";
 echo "<br>";
 echo "bem vindo";
@@ -58,7 +58,7 @@ for($i = 0; $i<1550; $i++)
 }
 */
 //echo "<script>window.location.href = 'http//www.globo.com</script>'"
-echo "<table border='5' style='padding:5px'>";
+/*echo "<table border='5' style='padding:5px'>";
 for($i=0; $i< 25; $i++){
     echo "<tr>";
     echo "<td>nome ".$i."</td>";
@@ -66,5 +66,5 @@ for($i=0; $i< 25; $i++){
     echo "</tr>";
 }
 echo "</table>";
-
+*/
 ?>
