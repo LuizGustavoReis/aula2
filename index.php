@@ -7,7 +7,7 @@ echo "<h1> função nativa echo</h1>";
 echo "<br>";
 echo "bem vindo";
 
-
+//Varivel 
 echo "<h4></h4>";
 $nota1 = 7.5;
 $nota2 = 8;
@@ -18,6 +18,8 @@ $texto = $texto.$resultado;
 
 
 echo $texto;
+
+Estrutura de repetição 
 
 if ($resultado >= 6)
 {
@@ -67,4 +69,55 @@ for($i=0; $i< 25; $i++){
 }
 echo "</table>";
 */
+
+//iniciando um array em branco na variavel
+
+
+//echo $lista;
+//echo $lista[0]; n funcionará
+//nao existe dados no indeci 0;
+
+$nome = array("fernado","vitoria","denise","matheus","guilherme","roge","virlande");
+//Acessando cada item do array manualmente 
+/*echo $nome[0]."<br>";
+echo $nome[1]."<br>";
+echo $nome[2]."<br>";
+echo $nome[3]."<br>";
+echo $nome[4]."<br>";
+echo $nome[5]."<br>";
+echo $nome[6]."<br>";*/
+
+    /*for($i = 0; $i< count($nome);$i++){
+        echo $nome[$i]."<br>";
+    }
+*/
+    $dados = array();
+    $dados["nome"] = array("Luiz","maria","joao");
+    $dados["idade"] = array(20, 18, 25);
+    $dados["solteiro"] = array(true, false, false);
+
+    for($i = 0; $i<10; $i++){
+        array_push($dados,$i);
+    }
+
+    echo"<pre>";
+    var_dump($dados);
+    echo"</pre>";
+
+    echo $dados[1] = "luiz es no indice 1";//atribuindo valor
+    echo $dados[1];//imrpimindo novamente
+ echo"<pre>";
+    var_dump($dados);
+    echo"</pre>";
+/*
+    $_POST["senha"];
+    $_GET["id"];
+    $_COOKIE["carrinho"];
+    $_SESSION
+    $_FILES
+    */
+    $array = mysqli_query("select nome, idade  from tabela");
+    $listaBanco["nome"];
+
+
 ?>
