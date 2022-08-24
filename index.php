@@ -65,6 +65,6 @@ for($i=0; $i< 25; $i++){
     echo "<td>idade ".$i."</td>";
     echo "</tr>";
 }
-echo "</table>"
+echo "</table>";
 
 ?>
