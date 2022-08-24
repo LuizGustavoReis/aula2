@@ -32,6 +32,13 @@ function somaArry($array){
     return $retorno;
 }
 
+function mediaArray($array){
+
+    $soma = somaArry($array);
+
+    return $soma/count($array);
+}
+
 function media($num1,$num2){
     $resultado = ($num1 + $num2) /2 ;
     return $resultado;
@@ -78,11 +85,13 @@ echo "o resultado da soma é :".$resultado;
 /*$numeros = array(1,5,10,15,20,25);
 echo somaArry($numeros);*/
 
-lendariacalculadora(8,6,"*");
+/*lendariacalculadora(8,6,"*");
 lendariacalculadora(8,6,"/");
 lendariacalculadora(8,6,"+");
-lendariacalculadora(8,6,"m");
+lendariacalculadora(8,6,"m");*/
 //lendariacalculadora(8,6,"ljvfafjpafjapjf");
+$numero =array(6,8);
+echo mediaArray($numero);
 
 
 ?>
