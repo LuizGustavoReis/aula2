@@ -23,6 +23,8 @@
   echo "pares: " .$cont_pares. " impares: " .$cont_impar."<br>";
   echo "positivos: ".$cont_positivo. " negativos: ".$cont_negativo."<br>";
   echo "</p>";
+  
+  //função
   function ImprimeArray($array){
       echo"<p>";
       for($i =0;$i < count($array);$i++){
