@@ -26,10 +26,13 @@
           <a class="nav-link" href="./fotos.php">Fotos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  href="./usuario.php">usuario</a>
+          <a class="nav-link "  href="./usuario.php">Cadastro</a>
         </li>
         <li class="nav-item">
           <a class="nav-link "  href="./produtos.php">produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="./clientes.php">clientes</a>
         </li>
       </ul>
      

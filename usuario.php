@@ -1,8 +1,8 @@
 <?php include "./cabecalho.php";?>
-<h1>lista de usuarios </h1>
+<h1>Cadastro </h1>
 <!--criando um formulario-->
 
-<form action="./produtos.php" method="get">
+<form action="./clientes.php" method="get">
 <div class="form-group col-4">
 <label>nome</label>
 <input type="text" 
