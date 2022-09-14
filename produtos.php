@@ -27,8 +27,9 @@ if( !empty($_POST) && isset($_POST) )
         <table >
     <tr>
         <th>
-            <?php echo $_GET["nome"];?>
             
+            <?php echo $_GET["nome"];?>
+
         </th>
         <th>Verduras</th>
         <th>Grãos</th>
