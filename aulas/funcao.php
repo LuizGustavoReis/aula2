@@ -90,8 +90,12 @@ lendariacalculadora(8,6,"/");
 lendariacalculadora(8,6,"+");
 lendariacalculadora(8,6,"m");*/
 //lendariacalculadora(8,6,"ljvfafjpafjapjf");
-$numero =array(6,8);
-echo mediaArray($numero);
+//$numero =array(6,8);
+//echo mediaArray($numero);
 
-
+ function fire($c){
+      $resultado = ($c * 9/5) + 32;
+      return $resultado;
+ }
+ echo fire(1);
 ?>
