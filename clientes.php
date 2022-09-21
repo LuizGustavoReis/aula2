@@ -12,6 +12,4 @@ echo "</pre>";
 ?>
 
 
-<input
-class ="form-control"
-<?php include "./rodape.php";?>
+<input class="form-control" <?php include "./rodape.php";?>
