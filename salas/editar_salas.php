@@ -24,7 +24,7 @@ if (isset($_GET["Id"]) && !empty($_GET["Id"])) {
           <div class="form-group">
 
           <label>id</label>
-          <input type="text" name="Id" readonly="readonly" value="<?php echo $dados["salaId"];?>"
+          <input type="text" name="salaId" readonly="readonly" value="<?php echo $dados["salaId"];?>"
           class="form-control"/>
 
           </div>
@@ -39,21 +39,28 @@ if (isset($_GET["Id"]) && !empty($_GET["Id"])) {
           <div class="form-group">
 
           <label>descrição</label>
-          <input type="text" name="sigla" readonly="readonly" value="<?php echo $dados["descricao"];?>"
+          <input type="text" name="descricao" readonly="readonly" value="<?php echo $dados["descricao"];?>"
           class="form-control"/>
 
           </div>
           <div class="form-group">
 
           <label>bloco</label>
-          <input type="text" name="apelido" readonly="readonly" value="<?php echo $dados["bloco"];?>"
+          <input type="text" name="bloco" readonly="readonly" value="<?php echo $dados["bloco"];?>"
           class="form-control"/>
 
           </div>
           <div class="form-group">
 
           <label>capacidade</label>
-          <input type="text" name="apelido" readonly="readonly" value="<?php echo $dados["capacidade"];?>"
+          <input type="text" name="capacidade" readonly="readonly" value="<?php echo $dados["capacidade"];?>"
+          class="form-control"/>
+
+          </div>
+          <div class="form-group">
+
+          <label>reservar</label>
+          <input type="checkbox" name="permitirReserva" readonly="readonly" value="<?php echo $dados["permitirReserva"];?>"
           class="form-control"/>
 
           </div>
