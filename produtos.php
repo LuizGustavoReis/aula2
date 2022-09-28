@@ -1,4 +1,4 @@
-<?php include "./cabecalho.php"; ?>
+<?php include "./layout/cabecalho.php"; ?>
 <h1>veja nossos produtos</h1>
 
 
@@ -69,4 +69,4 @@ if (!empty($_POST) && isset($_POST)) {
 
 
 
-        <?php include "./rodape.php"; ?>
+        <?php include "./layout/rodape.php"; ?>

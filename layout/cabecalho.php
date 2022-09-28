@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <style>
         /* div {
             border: 2px solid red;
@@ -24,12 +24,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php">
+          <a class="nav-link active" aria-current="page" href="../index.php">
             Home
         </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./usuarios.php">Usuários</a>
+          <a class="nav-link" href="../usuarios.php">Usuários</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,10 +43,10 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./produtos.php">Produtos</a>
+          <a class="nav-link" href="/aula2/salas/salas.php">salas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./diciplinas.php">diciplinas</a>
+          <a class="nav-link" href="/aula2/diciplinas/diciplinas.php">diciplinas</a>
         </li>
       </ul>
       

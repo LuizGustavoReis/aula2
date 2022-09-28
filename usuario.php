@@ -1,4 +1,4 @@
-<?php include "cabecalho.php";?>
+<?php include "layout/cabecalho.php";?>
 
 <div class="card mt-4 mb-4">
     <div class="card-header bg-primary text-white">Usuários</div>
@@ -65,4 +65,4 @@
   </tbody>
 </table>
 
-<?php include "rodape.php"; ?>
+<?php include "layout/rodape.php"; ?>

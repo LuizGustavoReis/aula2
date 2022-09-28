@@ -1,4 +1,4 @@
-<?php include "./cabecalho.php";?>
+<?php include "./layout/cabecalho.php";?>
 <h1> Lista de usuarios</h1>
 
 <?php
@@ -12,4 +12,4 @@ echo "</pre>";
 ?>
 
 
-<input class="form-control" <?php include "./rodape.php";?>
+<input class="form-control" <?php include "./layout/rodape.php";?>

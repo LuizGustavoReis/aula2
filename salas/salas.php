@@ -1,14 +1,14 @@
-<?php include "cabecalho.php"; ?>
+<?php include "../layout/cabecalho.php"; ?>
 
 
 <?php
 if(isset($_GET["busca"] ) && !empty($_GET["busca"])){
-    $dados = file_get_contents("https://reserva.fatectq.edu.br/API/DISCIPLINAS/busca/".$_GET["busca"]);
+    $dados = file_get_contents("https://reserva.fatectq.edu.br/API/salas/busca/".$_GET["busca"]);
     $dados = json_decode($dados, true);
 
 }else{
 //pegando informaçoes da API
-$dados = file_get_contents("https://reserva.fatectq.edu.br/API/DISCIPLINAS");
+$dados = file_get_contents("https://reserva.fatectq.edu.br/API/salas");
 //corvertendo as imformaçoes 
 $dados = json_decode($dados, true);
 }
@@ -17,7 +17,7 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
     ?>
 
     <div class="alert alert-danger mt-4">
-        Selecione uma diciplina para editar 
+        Selecione uma sala para editar 
     </div>
  <?php
     
@@ -32,12 +32,12 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
       <div class="card">
           <div class="card-header">Lista de disciplina</div>
           <div class= "card-body">
-          <form action="./diciplinas.php" method="get">
+          <form action="./salas.php" method="get">
               <div class="row">
                  
                   <div class="col-3">
                       <a class="btn btn-succes">
-                          nova Diciplina
+                          nova Sala
                       </a>
                   </div>
                   <div class="col-4">
@@ -69,14 +69,15 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
                 ?>
                     <tr>
 
-                        <td><?php echo $dados[$i]["disciplinaId"]; ?></td>
+                        <td><?php echo $dados[$i]["salaId"]; ?></td>
                         <td><?php echo $dados[$i]["nome"]; ?></td>
-                        <td><?php echo $dados[$i]["sigla"]; ?></td>
-                        <td><?php echo $dados[$i]["apelido"]; ?></td>
+                        <td><?php echo $dados[$i]["descricao"]; ?></td>
+                        <td><?php echo $dados[$i]["bloco"]; ?></td>
+                        <td><?php echo $dados[$i]["capacidade"]; ?></td>
 
                         <td>
                         <td>
-                            <a class="btn btn-warning" href="./editar_diciplina.php?Id=<?php echo $dados[$i]["disciplinaId"]; ?>"
+                            <a class="btn btn-warning" href="./editar_salas.php?Id=<?php echo $dados[$i]["salaId"]; ?>"
                             >Editar</a>
 
 
@@ -138,13 +139,10 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
 
 
 
-echo "<pre>";
-print_r($dados);
-echo "</pre>";
 
 ?>
 
 
 
 
-<?php include "rodape.php"; ?>
+<?php include "../layout/rodape.php"; ?>

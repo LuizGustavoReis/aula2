@@ -1,4 +1,4 @@
-<?php include "cabecalho.php"; ?>
+<?php include "../layout/cabecalho.php"; ?>
 
 
 <?php
@@ -71,4 +71,4 @@ if (isset($_GET["Id"]) && !empty($_GET["Id"])) {
 
 
 
-<?php include "rodape.php"; ?>
+<?php include "../layout/rodape.php"; ?>

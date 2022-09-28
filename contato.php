@@ -1,4 +1,4 @@
-<?php include "./cabecalho.php";?>
+<?php include "./layout/cabecalho.php";?>
 <h1>entre em contato</h1>
 <?php
 if( !empty($_POST) && isset($_POST) ) 
@@ -62,4 +62,4 @@ if( !empty($_POST) && isset($_POST) )
 
 
 
-<?php include "./rodape.php";?>
+<?php include "./layout/rodape.php";?>
