@@ -28,7 +28,24 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
 
 <div class="row">
     <div class="col-10offset-1">
+      <select class="form-control">
+          <option value=0; selected="selected">Selecione uma Sala</option>
+          <?php
+          for($i=0; $i<count($dados);$i++){
+              ?>
+              <option value="<?php echo $dados[$i]["salaId"];?>">
+              <?php echo $dados[$i]["nome"];?>
 
+            
+             </option>
+
+              <?php
+          }
+                       
+          ?>
+      
+
+      </select>
       <div class="card">
           <div class="card-header">Lista de disciplina</div>
           <div class= "card-body">
@@ -74,6 +91,22 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
                         <td><?php echo $dados[$i]["descricao"]; ?></td>
                         <td><?php echo $dados[$i]["bloco"]; ?></td>
                         <td><?php echo $dados[$i]["capacidade"]; ?></td>
+                        <td>
+                            <?php
+                            if($dados[$i]["permitirReserva"]){
+                                ?>
+                                <input type="checkbox" checked="checked"/>
+                                <?php
+                            }else{
+                                ?>
+                                <input type="checkbox"/>
+                                <?php
+                            }
+                            ?>
+                            
+                           
+                        </td>
+                        <td></td>
 
                         <td>
                         <td>
@@ -109,10 +142,12 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
 
                 <tr>
 
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>ID</td>
+                    <td>nome</td>
+                    <td>descricao</td>
+                    <td>bloco</td>
+                    <td>capacidade</td>
+                    
 
 
 
@@ -136,8 +171,9 @@ if(isset($_GET["erro"])&& $_GET["erro"]=="semid"){
 
 
 
-
-
+echo "<pre>";
+print_r($dados);
+echo "</pre>";
 
 
 ?>
